@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B6BCB" />
+    <title>方言對話 · Dialect Dialogue</title>
+    <script>
+      // Apply saved theme before first paint to avoid a light-mode flash (FOUC).
+      try {
+        var __s = localStorage.getItem('dialect-dialogue');
+        var __t = __s && JSON.parse(__s).state && JSON.parse(__s).state.theme;
+        if (__t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

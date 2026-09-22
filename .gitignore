@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+# Original project-planning prompt; not required to build or run the site.
+build_prompt.md
